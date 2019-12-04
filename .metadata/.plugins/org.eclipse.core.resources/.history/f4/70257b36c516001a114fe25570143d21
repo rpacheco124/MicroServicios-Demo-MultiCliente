@@ -1,0 +1,5 @@
+package pe.rpacheco.msEmpleados.entity;
+
+public class PersonaEntity {
+
+}

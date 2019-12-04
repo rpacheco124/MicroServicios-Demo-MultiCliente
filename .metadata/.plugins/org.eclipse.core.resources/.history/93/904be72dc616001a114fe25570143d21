@@ -1,0 +1,5 @@
+package pe.rpacheco.msEmpleados.controller;
+
+public class PersonaController {
+
+}

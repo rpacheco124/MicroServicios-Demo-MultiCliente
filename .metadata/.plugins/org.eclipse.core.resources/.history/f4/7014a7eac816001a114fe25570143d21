@@ -1,0 +1,5 @@
+package pe.rpacheco.msEmpleados.multitentenantconfig;
+
+public class HibernateConfig {
+
+}

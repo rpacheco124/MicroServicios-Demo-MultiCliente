@@ -6,81 +6,10 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
 Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data C:\rpacheco\microservicios-demo-multiempresa -product org.eclipse.epp.package.jee.product
 
-This is a continuation of log file C:\rpacheco\microservicios-demo-multiempresa\.metadata\.bak_2.log
-Created Time: 2019-12-04 18:13:27.271
+This is a continuation of log file C:\rpacheco\microservicios-demo-multiempresa\.metadata\.bak_9.log
+Created Time: 2019-12-04 20:04:34.607
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:13:27.278
-!MESSAGE 
-!STACK 0
-java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
-	at java.lang.Class.getDeclaredMethod(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.updateHighlightAnnotations(STS4LanguageClientImpl.java:181)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.access$0(STS4LanguageClientImpl.java:169)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:154)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:139)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
-	at org.eclipse.swt.widgets.Display.msgFilterProc(Display.java:3289)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
-	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
-	at org.eclipse.swt.widgets.Composite.WM_SYSCOMMAND(Composite.java:1830)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
-	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4867)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4792)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2309)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3559)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:13:32.349
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:34.614
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -135,7 +64,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:13:37.216
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:34.626
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -190,7 +119,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:13:42.211
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:34.637
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -245,7 +174,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:13:47.213
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:34.648
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -300,7 +229,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:13:52.211
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:34.660
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -355,78 +284,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:13:57.276
-!MESSAGE 
-!STACK 0
-java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
-	at java.lang.Class.getDeclaredMethod(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.updateHighlightAnnotations(STS4LanguageClientImpl.java:181)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.access$0(STS4LanguageClientImpl.java:169)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:154)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:139)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
-	at org.eclipse.swt.widgets.Display.msgFilterProc(Display.java:3289)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
-	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
-	at org.eclipse.swt.widgets.Composite.WM_SYSCOMMAND(Composite.java:1830)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4846)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
-	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:91)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4867)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4792)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2309)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3559)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:14:02.207
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:34.671
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -481,7 +339,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:14:07.209
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:34.683
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -536,7 +394,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:14:12.218
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:34.695
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -591,7 +449,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:14:17.213
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:34.707
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -646,7 +504,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:14:22.206
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:37.858
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -701,7 +559,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:14:27.233
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:37.869
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -756,7 +614,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:14:32.258
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:37.935
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -811,7 +669,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:14:37.334
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:42.870
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -866,7 +724,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:14:42.211
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:42.881
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -921,7 +779,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:14:47.206
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:42.893
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -976,7 +834,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:14:52.207
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:47.857
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -1031,7 +889,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:14:57.214
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:47.898
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -1086,7 +944,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:15:02.267
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:47.910
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -1141,7 +999,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:15:07.214
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:52.859
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -1196,7 +1054,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:15:12.209
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:52.874
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
@@ -1251,502 +1109,7 @@ java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSour
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:15:17.210
-!MESSAGE 
-!STACK 0
-java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
-	at java.lang.Class.getDeclaredMethod(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.updateHighlightAnnotations(STS4LanguageClientImpl.java:181)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.access$0(STS4LanguageClientImpl.java:169)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:154)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:139)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:15:22.208
-!MESSAGE 
-!STACK 0
-java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
-	at java.lang.Class.getDeclaredMethod(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.updateHighlightAnnotations(STS4LanguageClientImpl.java:181)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.access$0(STS4LanguageClientImpl.java:169)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:154)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:139)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:15:27.224
-!MESSAGE 
-!STACK 0
-java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
-	at java.lang.Class.getDeclaredMethod(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.updateHighlightAnnotations(STS4LanguageClientImpl.java:181)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.access$0(STS4LanguageClientImpl.java:169)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:154)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:139)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:15:32.271
-!MESSAGE 
-!STACK 0
-java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
-	at java.lang.Class.getDeclaredMethod(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.updateHighlightAnnotations(STS4LanguageClientImpl.java:181)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.access$0(STS4LanguageClientImpl.java:169)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:154)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:139)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:15:37.224
-!MESSAGE 
-!STACK 0
-java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
-	at java.lang.Class.getDeclaredMethod(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.updateHighlightAnnotations(STS4LanguageClientImpl.java:181)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.access$0(STS4LanguageClientImpl.java:169)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:154)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:139)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:15:42.333
-!MESSAGE 
-!STACK 0
-java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
-	at java.lang.Class.getDeclaredMethod(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.updateHighlightAnnotations(STS4LanguageClientImpl.java:181)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.access$0(STS4LanguageClientImpl.java:169)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:154)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:139)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:15:47.210
-!MESSAGE 
-!STACK 0
-java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
-	at java.lang.Class.getDeclaredMethod(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.updateHighlightAnnotations(STS4LanguageClientImpl.java:181)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.access$0(STS4LanguageClientImpl.java:169)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:154)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:139)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:15:52.210
-!MESSAGE 
-!STACK 0
-java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
-	at java.lang.Class.getDeclaredMethod(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.updateHighlightAnnotations(STS4LanguageClientImpl.java:181)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.access$0(STS4LanguageClientImpl.java:169)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:154)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:139)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:15:57.215
-!MESSAGE 
-!STACK 0
-java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
-	at java.lang.Class.getDeclaredMethod(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.updateHighlightAnnotations(STS4LanguageClientImpl.java:181)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.access$0(STS4LanguageClientImpl.java:169)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.updateSourceViewer(STS4LanguageClientImpl.java:154)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
-	at java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
-	at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
-	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl$UpdateHighlights.runInUIThread(STS4LanguageClientImpl.java:139)
-	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 18:16:02.293
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2019-12-04 20:04:52.887
 !MESSAGE 
 !STACK 0
 java.lang.NoSuchMethodException: org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doUpdateCodeMinings()
