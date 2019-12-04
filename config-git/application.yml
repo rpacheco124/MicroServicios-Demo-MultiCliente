@@ -1,0 +1,14 @@
+---
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/microservicios-demo
+	username: postgres
+	password: Password
+  jpa:
+    properties:
+	  hibernate:
+	    dialect: org.hibernate.dialect.PostgreSQLDialect
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8100/eureka/

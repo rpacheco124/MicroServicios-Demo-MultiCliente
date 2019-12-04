@@ -10143,3 +10143,132 @@ Contains: Missing org.springframework.cloud:spring-cloud-starter-netflix-eureka-
 !MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:jar:javadoc:2.2.0.RELEASE
 !SUBENTRY 2 org.eclipse.m2e.core 4 -1 2019-12-04 17:46:44.853
 !MESSAGE Missing org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:jar:javadoc:2.2.0.RELEASE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:58.447
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.kivGqeUA
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:58.467
+!MESSAGE subscribing to classpath changes: sts4.classpath.kivGqeUA
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:58.485
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:58.511
+!MESSAGE subsribers = [sts4.classpath.kivGqeUA]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:58.533
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:58.971
+!MESSAGE project ms-demo-rest ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:58.982
+!MESSAGE Preparing classpath changed notification ms-demo-rest
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:58.992
+!MESSAGE project msConfiguracion ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.001
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.012
+!MESSAGE project msEmpleados ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.022
+!MESSAGE project msEureka ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.032
+!MESSAGE classpath=112 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.042
+!MESSAGE project msProyectos ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.052
+!MESSAGE executing callback sts4.classpath.kivGqeUA ms-demo-rest false 112
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.061
+!MESSAGE project msSeguridad ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.078
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.097
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.kivGqeUA => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.113
+!MESSAGE executing callback sts4.classpath.kivGqeUA SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.122
+!MESSAGE Preparing classpath changed notification msSeguridad
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.132
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.157
+!MESSAGE classpath=186 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.165
+!MESSAGE executing callback sts4.classpath.kivGqeUA msSeguridad false 186
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.348
+!MESSAGE executing callback sts4.classpath.kivGqeUA SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.368
+!MESSAGE Preparing classpath changed notification msProyectos
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.384
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.430
+!MESSAGE classpath=181 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.455
+!MESSAGE executing callback sts4.classpath.kivGqeUA msProyectos false 181
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.495
+!MESSAGE executing callback sts4.classpath.kivGqeUA SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.506
+!MESSAGE Preparing classpath changed notification msEureka
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.516
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.543
+!MESSAGE classpath=176 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.552
+!MESSAGE executing callback sts4.classpath.kivGqeUA msEureka false 176
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.608
+!MESSAGE executing callback sts4.classpath.kivGqeUA SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.618
+!MESSAGE Preparing classpath changed notification msEmpleados
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.626
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.656
+!MESSAGE classpath=181 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.667
+!MESSAGE executing callback sts4.classpath.kivGqeUA msEmpleados false 181
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.699
+!MESSAGE executing callback sts4.classpath.kivGqeUA SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.713
+!MESSAGE Preparing classpath changed notification msConfiguracion
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.725
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.749
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.760
+!MESSAGE executing callback sts4.classpath.kivGqeUA msConfiguracion false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-04 17:57:59.794
+!MESSAGE executing callback sts4.classpath.kivGqeUA SUCCESS [done]
