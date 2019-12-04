@@ -6,8 +6,8 @@ spring:
 	password: Password
   jpa:
     properties:
-	  hibernate:
-	    dialect: org.hibernate.dialect.PostgreSQLDialect
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
 eureka:
   client:
     serviceUrl:
