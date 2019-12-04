@@ -2,8 +2,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/microservicios-demo
-	username: postgres
-	password: Password
+    username: postgres
+    password: Password
   jpa:
     properties:
       hibernate:
