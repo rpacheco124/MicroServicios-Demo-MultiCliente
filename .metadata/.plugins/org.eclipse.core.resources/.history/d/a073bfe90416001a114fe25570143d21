@@ -1,0 +1,37 @@
+package pe.rpacheco.msdemorest.config;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.hibernate.engine.jdbc.connections.spi.AbstractMultiTenantConnectionProvider;
+import org.hibernate.engine.jdbc.connections.spi.ConnectionProvider;
+
+public class MultiTenantConnectionProvider extends AbstractMultiTenantConnectionProvider {
+	 
+    public static final MultiTenantConnectionProvider INSTANCE =
+            new MultiTenantConnectionProvider();
+ 
+    private final Map<String, ConnectionProvider> connectionProviderMap =
+            new HashMap<>();
+ 
+    Map<String, ConnectionProvider> getConnectionProviderMap() {
+        return connectionProviderMap;
+    }
+    
+	@Override
+	protected ConnectionProvider getAnyConnectionProvider() {
+		// TODO Auto-generated method stub
+        return connectionProviderMap.get(
+                TenantContext.DEFAULT_TENANT_IDENTIFIER
+            );
+	}
+
+	@Override
+	protected ConnectionProvider selectConnectionProvider(String tenantIdentifier) {
+		// TODO Auto-generated method stub
+        return connectionProviderMap.get(
+                tenantIdentifier
+            );
+	}
+
+}

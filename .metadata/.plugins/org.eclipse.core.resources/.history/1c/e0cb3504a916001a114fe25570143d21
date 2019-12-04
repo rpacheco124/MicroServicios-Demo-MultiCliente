@@ -1,0 +1,9 @@
+package pe.rpacheco.msdemorest.config;
+
+import org.springframework.stereotype.Component;
+import org.hibernate.engine.jdbc.connections.spi.*;
+
+@Component
+public class MultiTenantConnectionProvider implements MultiTenantConnectionProvider {
+
+}
