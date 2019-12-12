@@ -26,19 +26,18 @@ public class RequestFilterTenant extends GenericFilterBean {
 		HttpServletRequest req = (HttpServletRequest) request;
 		HttpServletResponse res = (HttpServletResponse) response;
 
-		System.out.println("In preHandle we are Intercepting the Request");
-		System.out.println("____________________________________________");
-		String requestURI = req.getRequestURI();
-		String tenantID = req.getHeader("X-TenantID");
-		System.out.println("RequestURI::" + requestURI + " || Search for X-TenantID  :: " + tenantID);
+		String tenantID = req.getHeader("Tenant-Schema-Id");
 		if (tenantID == null) {
-			res.getWriter().write("X-TenantID not present in the Request Header");
 			res.setStatus(400);
 		}
+		
 		TenantContext.setCurrentTenant(tenantID);
-		System.out.println("____________________REGISTRADO CORRECTAMENTE!!!________________________");
 
 		chain.doFilter(request, response);
+		
+		TenantContext.clear();
 	}
+	
+	
 
 }

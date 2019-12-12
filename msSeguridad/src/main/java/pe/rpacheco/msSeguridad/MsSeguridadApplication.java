@@ -33,7 +33,6 @@ public class MsSeguridadApplication {
 	
 	@PostMapping(value="/createUser")
 	public ResponseEntity<?> signup(@RequestBody Usuario user) {
-		//user.setId_usuario(usuarioRepository.count() + 1);
 		user.setEstado(true);
 		user.setPassword(passwordEncoder.encode(user.getPassword()));
 		usuarioRepository.save(user);

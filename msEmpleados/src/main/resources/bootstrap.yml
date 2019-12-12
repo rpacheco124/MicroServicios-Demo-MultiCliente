@@ -6,3 +6,7 @@ spring:
     name: empleados
 server:
   port: 0
+security:
+  oauth2:
+    resource:
+      id: empleados

@@ -203,3 +203,15 @@ TABLESPACE pg_default;
 
 ALTER TABLE quechua.proyecto_empleado
     OWNER to postgres;
+	
+
+
+ALTER TABLE lima.usuario
+    ALTER COLUMN id_persona DROP NOT NULL;
+ALTER TABLE lima.usuario DROP CONSTRAINT usuario_persona_fk;
+
+
+
+ALTER TABLE quechua.usuario
+    ALTER COLUMN id_persona DROP NOT NULL;
+ALTER TABLE quechua.usuario DROP CONSTRAINT usuario_persona_fk;
