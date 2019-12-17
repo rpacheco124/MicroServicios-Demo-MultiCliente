@@ -1,5 +1,0 @@
-docker run --name postgreSQL -v c:/rpacheco/microservicios-demo-multiempresa/data-postgresql:/var/lib/postgresql/data -p 5432:5432 -e POSTGRES_PASSWORD=Password -d postgres
-
-docker run --name postgreSQL -p 5432:5432 -e POSTGRES_PASSWORD=Password -d postgres
-
-docker run --name pgadmin4 -p 8090:80 -e PGADMIN_DEFAULT_EMAIL=rpacheco124@gmail.com -e PGADMIN_DEFAULT_PASSWORD=Password -d dpage/pgadmin4

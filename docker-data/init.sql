@@ -1,11 +1,12 @@
-CREATE DATABASE microservicios-demo
+CREATE DATABASE microservicios_demo
     WITH 
     OWNER = postgres
     ENCODING = 'UTF8'
     CONNECTION LIMIT = -1;
 
---===================-- LIMA SCHEMA --===================--
-	
+\c microservicios_demo
+
+/*--===================-- LIMA SCHEMA --===================--*/
 CREATE SCHEMA lima
     AUTHORIZATION postgres;
 	
@@ -104,7 +105,7 @@ TABLESPACE pg_default;
 ALTER TABLE lima.proyecto_empleado
     OWNER to postgres;
 
---===================-- QUECHUA SCHEMA --===================--
+/*--===================-- QUECHUA SCHEMA --===================--*/
 
 CREATE SCHEMA quechua
     AUTHORIZATION postgres;
