@@ -8,10 +8,12 @@ services:
     environment:
       - "POSTGRES_PASSWORD=Password"
     volumes:
-      - "./docker-data/:/docker-entrypoint-initdb.d/"
+      - "./docker-data/sql-script/:/docker-entrypoint-initdb.d/"
   pgadmin:
     image: dpage/pgadmin4
     container_name: PgAdmin4
+    volumes:
+      - "./docker-data/pgAdmin-data/:/var/lib/pgadmin"
     ports:
       - "8090:80"
     environment:

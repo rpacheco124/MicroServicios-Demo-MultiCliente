@@ -12,12 +12,12 @@ CREATE SCHEMA lima
 	
 CREATE TABLE lima.persona
 (
-    id_persona integer NOT NULL,
+    id_persona integer NOT NULL GENERATED ALWAYS AS (1) STORED,
     nombres text COLLATE pg_catalog."default",
     apellidos text COLLATE pg_catalog."default",
     fecha_nacimiento date,
     estado boolean,
-    CONSTRAINT "personaPk" PRIMARY KEY (id_persona)
+    CONSTRAINT "persona_pk" PRIMARY KEY (id_persona)
 )
 
 TABLESPACE pg_default;
@@ -67,7 +67,7 @@ ALTER TABLE lima.empleado
 	
 CREATE TABLE lima.proyecto
 (
-    id_proyecto integer NOT NULL,
+    id_proyecto integer NOT NULL GENERATED ALWAYS AS (1) STORED,
     nombre text NOT NULL,
     descripcion text,
     fecha_inicio date NOT NULL,
@@ -83,7 +83,7 @@ ALTER TABLE lima.proyecto
 	
 CREATE TABLE lima.proyecto_empleado
 (
-    id_proyecto_empleado integer NOT NULL,
+    id_proyecto_empleado integer NOT NULL GENERATED ALWAYS AS (1) STORED,
     id_proyecto integer NOT NULL,
     id_empleado integer NOT NULL,
     estado boolean NOT NULL,
@@ -112,7 +112,7 @@ CREATE SCHEMA quechua
 	
 CREATE TABLE quechua.persona
 (
-    id_persona integer NOT NULL,
+    id_persona integer NOT NULL GENERATED ALWAYS AS (1) STORED,
     nombres text COLLATE pg_catalog."default",
     apellidos text COLLATE pg_catalog."default",
     fecha_nacimiento date,
@@ -167,7 +167,7 @@ ALTER TABLE quechua.empleado
 	
 CREATE TABLE quechua.proyecto
 (
-    id_proyecto integer NOT NULL,
+    id_proyecto integer NOT NULL GENERATED ALWAYS AS (1) STORED,
     nombre text NOT NULL,
     descripcion text,
     fecha_inicio date NOT NULL,
@@ -183,7 +183,7 @@ ALTER TABLE quechua.proyecto
 	
 CREATE TABLE quechua.proyecto_empleado
 (
-    id_proyecto_empleado integer NOT NULL,
+    id_proyecto_empleado integer NOT NULL GENERATED ALWAYS AS (1) STORED,
     id_proyecto integer NOT NULL,
     id_empleado integer NOT NULL,
     estado boolean NOT NULL,
@@ -206,6 +206,9 @@ ALTER TABLE quechua.proyecto_empleado
     OWNER to postgres;
 	
 
+/*
+
+--===================-- DEPRECATE --===================--
 
 ALTER TABLE lima.usuario
     ALTER COLUMN id_persona DROP NOT NULL;
@@ -216,3 +219,24 @@ ALTER TABLE lima.usuario DROP CONSTRAINT usuario_persona_fk;
 ALTER TABLE quechua.usuario
     ALTER COLUMN id_persona DROP NOT NULL;
 ALTER TABLE quechua.usuario DROP CONSTRAINT usuario_persona_fk;
+
+*/
+
+/*--===================-- DATA --===================--*/
+
+
+INSERT INTO lima.persona(
+	nombres, apellidos, fecha_nacimiento, estado)
+	VALUES ('Admin Lima', '', null, true);
+
+INSERT INTO quechua.persona(
+	nombres, apellidos, fecha_nacimiento, estado)
+	VALUES ('Admin Quechua', '', null, true);
+
+INSERT INTO lima.usuario(
+	id_persona, usuario, password, estado)
+	VALUES (1, 'admin.lima','$2y$12$iT4l4fGjyz8u22lRmLZ9c.uV5U4P9sLmDhPqUmtmvx7IpOuptV0Ai', true);
+	
+INSERT INTO quechua.usuario(
+	id_persona, usuario, password, estado)
+	VALUES (1, 'admin.quechua','$2y$12$iT4l4fGjyz8u22lRmLZ9c.uV5U4P9sLmDhPqUmtmvx7IpOuptV0Ai', true);
