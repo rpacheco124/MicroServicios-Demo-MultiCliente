@@ -18,6 +18,7 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 import org.springframework.stereotype.Component;
 
 import pe.rpacheco.msEmpleados.multitentenantconfig.TenantContext;
+import pe.rpacheco.msEmpleados.security.AuthTokenContext;
 
 @Component
 @Order(1)
@@ -30,6 +31,7 @@ public class RequestFilterTenant implements Filter {
 	@Autowired
 	private JwtTokenStore tokenStore;
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
@@ -50,6 +52,7 @@ public class RequestFilterTenant implements Filter {
 		}
 
 		TenantContext.setCurrentTenant(details.get(TENANT_SCHEMA_ID_CLAIMS).toString());
+		AuthTokenContext.setToken(authorization);
 
 		chain.doFilter(request, response);
 	}

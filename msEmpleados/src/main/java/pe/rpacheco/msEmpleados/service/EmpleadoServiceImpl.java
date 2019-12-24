@@ -12,6 +12,7 @@ import pe.rpacheco.msEmpleados.dao.Empleado;
 import pe.rpacheco.msEmpleados.dto.EmpleadoDto;
 import pe.rpacheco.msEmpleados.dto.PersonaDto;
 import pe.rpacheco.msEmpleados.repository.EmpleadoRepository;
+import pe.rpacheco.msEmpleados.security.AuthTokenContext;
 import pe.rpacheco.msEmpleados.util.EmpleadoParse;
 
 @Service
@@ -32,13 +33,13 @@ public class EmpleadoServiceImpl implements EmpleadoService {
 	}
 
 	@Override
-	public EmpleadoDto save(EmpleadoDto empleado, String token) throws Exception {
+	public EmpleadoDto save(EmpleadoDto empleado) throws Exception {
 		if (empleado.getIdEmpleado() == null || empleado.getIdEmpleado() == 0) {
 			if (empleado.getNombres().isEmpty()) {
 				throw new Exception("Se debe de ingresar el nombre del empleado!");
 			}
 			PersonaDto pSave = new PersonaDto(empleado.getNombres(), empleado.getApellidos());
-			PersonaDto persona = personaClient.save(pSave, token);
+			PersonaDto persona = personaClient.save(pSave, AuthTokenContext.getToken());
 			
 			if (persona.getIdPersona() == null) {
 				throw new Exception("Ocurrio un error con el servicio de Personas");

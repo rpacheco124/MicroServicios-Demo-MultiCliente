@@ -26,9 +26,8 @@ public class EmpleadoController {
 	}
 	
 	@PostMapping("/save")
-	public EmpleadoDto save(@RequestBody EmpleadoDto empleado, @RequestHeader("Authorization") String token) throws Exception {
-		System.out.println(token);
-		return empleadoService.save(empleado, token);
+	public EmpleadoDto save(@RequestBody EmpleadoDto empleado) throws Exception {
+		return empleadoService.save(empleado);
 	}
 	
 }
