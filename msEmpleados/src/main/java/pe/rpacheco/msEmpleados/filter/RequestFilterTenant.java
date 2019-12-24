@@ -1,4 +1,4 @@
-package pe.rpacheco.msEmpleados.interceptor;
+package pe.rpacheco.msEmpleados.filter;
 
 import java.io.IOException;
 import java.util.Map;

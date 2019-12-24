@@ -12,7 +12,7 @@ CREATE SCHEMA lima
 	
 CREATE TABLE lima.persona
 (
-    id_persona integer NOT NULL GENERATED ALWAYS AS (1) STORED,
+    id_persona bigserial NOT NULL,
     nombres text COLLATE pg_catalog."default",
     apellidos text COLLATE pg_catalog."default",
     fecha_nacimiento date,
@@ -27,8 +27,8 @@ ALTER TABLE lima.persona
 	
 CREATE TABLE lima.usuario
 (
-    id_usuario integer NOT NULL GENERATED ALWAYS AS (1) STORED,
-    id_persona integer NOT NULL,
+    id_usuario bigserial NOT NULL,
+    id_persona bigserial NOT NULL,
     usuario text NOT NULL,
     password text NOT NULL,
     estado boolean,
@@ -47,8 +47,8 @@ ALTER TABLE lima.usuario
 	
 CREATE TABLE lima.empleado
 (
-    id_empleado integer NOT NULL GENERATED ALWAYS AS (1) STORED,
-    id_persona integer NOT NULL,
+    id_empleado bigserial NOT NULL,
+    id_persona bigserial NOT NULL,
     correo text,
     telefono text,
     estado boolean,
@@ -67,7 +67,7 @@ ALTER TABLE lima.empleado
 	
 CREATE TABLE lima.proyecto
 (
-    id_proyecto integer NOT NULL GENERATED ALWAYS AS (1) STORED,
+    id_proyecto bigserial NOT NULL,
     nombre text NOT NULL,
     descripcion text,
     fecha_inicio date NOT NULL,
@@ -83,9 +83,9 @@ ALTER TABLE lima.proyecto
 	
 CREATE TABLE lima.proyecto_empleado
 (
-    id_proyecto_empleado integer NOT NULL GENERATED ALWAYS AS (1) STORED,
-    id_proyecto integer NOT NULL,
-    id_empleado integer NOT NULL,
+    id_proyecto_empleado bigserial NOT NULL,
+    id_proyecto bigserial NOT NULL,
+    id_empleado bigserial NOT NULL,
     estado boolean NOT NULL,
     CONSTRAINT proyecto_empleado_pk PRIMARY KEY (id_proyecto_empleado),
     CONSTRAINT proyecto_empleado_proyecto_pk FOREIGN KEY (id_proyecto)
@@ -112,12 +112,12 @@ CREATE SCHEMA quechua
 	
 CREATE TABLE quechua.persona
 (
-    id_persona integer NOT NULL GENERATED ALWAYS AS (1) STORED,
+    id_persona bigserial NOT NULL,
     nombres text COLLATE pg_catalog."default",
     apellidos text COLLATE pg_catalog."default",
     fecha_nacimiento date,
     estado boolean,
-    CONSTRAINT "personaPk" PRIMARY KEY (id_persona)
+    CONSTRAINT "persona_pk" PRIMARY KEY (id_persona)
 )
 
 TABLESPACE pg_default;
@@ -127,8 +127,8 @@ ALTER TABLE quechua.persona
 	
 CREATE TABLE quechua.usuario
 (
-    id_usuario integer NOT NULL GENERATED ALWAYS AS (1) STORED,
-    id_persona integer NOT NULL,
+    id_usuario bigserial NOT NULL,
+    id_persona bigserial NOT NULL,
     usuario text NOT NULL,
     password text NOT NULL,
     estado boolean,
@@ -147,8 +147,8 @@ ALTER TABLE quechua.usuario
 	
 CREATE TABLE quechua.empleado
 (
-    id_empleado integer NOT NULL GENERATED ALWAYS AS (1) STORED,
-    id_persona integer NOT NULL,
+    id_empleado bigserial NOT NULL,
+    id_persona bigserial NOT NULL,
     correo text,
     telefono text,
     estado boolean,
@@ -167,7 +167,7 @@ ALTER TABLE quechua.empleado
 	
 CREATE TABLE quechua.proyecto
 (
-    id_proyecto integer NOT NULL GENERATED ALWAYS AS (1) STORED,
+    id_proyecto bigserial NOT NULL,
     nombre text NOT NULL,
     descripcion text,
     fecha_inicio date NOT NULL,
@@ -183,9 +183,9 @@ ALTER TABLE quechua.proyecto
 	
 CREATE TABLE quechua.proyecto_empleado
 (
-    id_proyecto_empleado integer NOT NULL GENERATED ALWAYS AS (1) STORED,
-    id_proyecto integer NOT NULL,
-    id_empleado integer NOT NULL,
+    id_proyecto_empleado bigserial NOT NULL,
+    id_proyecto bigserial NOT NULL,
+    id_empleado bigserial NOT NULL,
     estado boolean NOT NULL,
     CONSTRAINT proyecto_empleado_pk PRIMARY KEY (id_proyecto_empleado),
     CONSTRAINT proyecto_empleado_proyecto_pk FOREIGN KEY (id_proyecto)

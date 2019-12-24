@@ -3,6 +3,8 @@ package pe.rpacheco.msPersonas.dao;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -11,6 +13,8 @@ import javax.persistence.Table;
 public class Persona {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	//@Generated(GenerationTime.INSERT)
 	private Long id_persona;
 	
 	private String nombres;

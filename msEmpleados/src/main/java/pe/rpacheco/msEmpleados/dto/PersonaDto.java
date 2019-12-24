@@ -1,4 +1,4 @@
-package pe.rpacheco.msPersonas.dto;
+package pe.rpacheco.msEmpleados.dto;
 
 import java.util.Date;
 
@@ -20,6 +20,11 @@ public class PersonaDto {
 		this.apellidos = apellidos;
 		this.fechaNacimiento = fechaNacimiento;
 		this.estado = estado;
+	}
+
+	public PersonaDto(String nombres, String apellidos) {
+		this.nombres = nombres;
+		this.apellidos = apellidos;
 	}
 
 	public String getApellidos() {

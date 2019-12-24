@@ -10,3 +10,6 @@ security:
   oauth2:
     resource:
       id: personas
+feign: 
+  hystrix: 
+    enabled: true

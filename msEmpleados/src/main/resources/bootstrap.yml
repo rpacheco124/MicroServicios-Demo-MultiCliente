@@ -10,3 +10,6 @@ security:
   oauth2:
     resource:
       id: empleados
+feign: 
+  hystrix: 
+    enabled: true

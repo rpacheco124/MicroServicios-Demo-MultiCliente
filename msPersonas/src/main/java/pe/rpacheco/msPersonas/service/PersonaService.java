@@ -7,7 +7,7 @@ import pe.rpacheco.msPersonas.dto.PersonaDto;
 public interface PersonaService {
 
 	public List<PersonaDto> getAll();
-	public void save(PersonaDto persona);
-	public PersonaDto findById(Long id);
+	public PersonaDto save(PersonaDto persona);
+	public PersonaDto findById(Long id) throws Exception;
 	
 }
