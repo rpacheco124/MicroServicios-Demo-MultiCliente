@@ -12,3 +12,5 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8100/eureka/
+config-server:
+  url: http://localhost:8888/
