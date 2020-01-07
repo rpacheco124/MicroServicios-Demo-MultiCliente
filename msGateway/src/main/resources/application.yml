@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888/
+  application:
+    name: gateway
+server:
+  port: 8080
+zuul:
+  prefix: /api
+  sensitiveHeaders: Cookie,Set-Cookie

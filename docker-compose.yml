@@ -19,5 +19,10 @@ services:
     environment:
       - "PGADMIN_DEFAULT_EMAIL=admin@admin.com"
       - "PGADMIN_DEFAULT_PASSWORD=Password"
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - "9411:9411"
 #volumes:
 #  psqlvol:

@@ -35,7 +35,7 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
 	@Override
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 		clients.inMemory().withClient("rpacheco").secret(passwordEncoder.encode("rpacheco"))
-		.resourceIds("empleados", "personas")
+		.resourceIds("empleados", "personas", "gateway")
 				.authorizedGrantTypes("password").authorities("CLIENT").scopes("read");
 	}
 
